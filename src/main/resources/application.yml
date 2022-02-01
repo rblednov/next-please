@@ -1,0 +1,6 @@
+server:
+  port: 8080
+  compression:
+    enabled: false
+  forward-headers-strategy: none
+  shutdown: graceful

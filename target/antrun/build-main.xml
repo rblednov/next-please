@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-antrun-" default="main">
+  <target name="main">
+    <copy file="target/nextplease-1.0.0.jar" tofile="./dist/app.jar" />
+    <copy todir="./dist/unwrap" failonerror="false">
+      <fileset dir="target/dependency" />
+    </copy>
+    <copy todir="./dist/surefire-reports" failonerror="false">
+      <fileset dir="target/surefire-reports" />
+    </copy>
+  </target>
+</project>
